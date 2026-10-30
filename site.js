@@ -55,9 +55,8 @@
       var a = e.target.closest && e.target.closest('a[href]');
       if (!a || a.target === '_blank' || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
       var href = a.getAttribute('href');
-      if (!/\.html(#.*)?$/.test(href)) return;
-      var here = location.pathname.split('/').pop() || 'index.html';
-      if (href.split('#')[0] === here) return;
+      if (!/^\/(?!\/)/.test(href)) return;
+      if (href.split('#')[0] === location.pathname) return;
       e.preventDefault();
       root.classList.add('leaving');
       setTimeout(function () { location.href = a.href; }, 180);

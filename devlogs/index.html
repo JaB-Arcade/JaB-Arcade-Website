@@ -4,33 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dev Logs | JaB Arcade</title>
-<meta name="description" content="Weekly development logs from JaB Arcade, posted every Monday.">
-<link rel="canonical" href="https://jabarcade.com/devlogs.html">
-<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="description" content="Read our Dev Logs and see what we've been up to.">
+<link rel="canonical" href="https://jabarcade.com/devlogs/">
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta name="theme-color" content="#c0281c">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JaB Arcade">
 <meta property="og:title" content="JaB Arcade Dev Logs">
-<meta property="og:description" content="Weekly development logs from JaB Arcade, posted every Monday.">
-<meta property="og:url" content="https://jabarcade.com/devlogs.html">
+<meta property="og:description" content="Read our Dev Logs and see what we've been up to.">
+<meta property="og:url" content="https://jabarcade.com/devlogs/">
 <meta property="og:image" content="https://jabarcade.com/img/og-jab.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <style>html{padding-block:env(safe-area-inset-top,0px) env(safe-area-inset-bottom,0px)}body{margin:0}</style>
 </head>
 <body>
 <header>
   <div class="wrap hd">
-    <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="40" height="40">JaB Arcade</a>
+    <a class="brand" href="/"><img src="/img/logo.svg" alt="" width="40" height="40">JaB Arcade</a>
     <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav" aria-label="Main">
-      <a href="index.html#games">Our Games</a>
-      <a href="devlogs.html" aria-current="page">Dev Logs</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="/#games">Our Games</a>
+      <a href="/devlogs/" aria-current="page">Dev Logs</a>
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact Us</a>
     </nav>
   </div>
 </header>
@@ -64,7 +64,7 @@ var LOGS=[{"d": "2026-10-26", "x": "2114809395489968387", "w": "October 19-25"},
   function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]});}
   function card(l,i,big){
     var t=l.t?'<details class="dl-text"><summary>Read the dev log</summary><div>'+esc(l.t).replace(/\n/g,'<br>')+'</div></details>':'';
-    return '<article class="dl-card'+(big?' dl-big':'')+'"><button type="button" class="dl-thumb" data-i="'+i+'" aria-label="Open the '+l.w+' dev log full size"><img src="img/devlogs/'+l.d+(big?'':'-t')+'.webp" alt="Weekly dev log, '+l.w+'" loading="'+(big?'eager':'lazy')+'" width="640" height="640"></button>'+
+    return '<article class="dl-card'+(big?' dl-big':'')+'"><button type="button" class="dl-thumb" data-i="'+i+'" aria-label="Open the '+l.w+' dev log full size"><img src="/img/devlogs/'+l.d+(big?'':'-t')+'.webp" alt="Weekly dev log, '+l.w+'" loading="'+(big?'eager':'lazy')+'" width="640" height="640"></button>'+
       '<div class="dl-info">'+(big?'<span class="tag">Latest</span>':'')+'<h4>'+l.w+'</h4><span class="dl-posted">Posted '+fmt(l.d)+'</span>'+t+
       '<div class="dl-links"><button type="button" class="more dl-open" data-i="'+i+'">Full size</button><a class="more" href="https://x.com/JaBArcade/status/'+l.x+'" target="_blank" rel="noopener">View on X &rarr;</a></div></div></article>';
   }
@@ -76,12 +76,12 @@ var LOGS=[{"d": "2026-10-26", "x": "2114809395489968387", "w": "October 19-25"},
   var lb=document.createElement('div');lb.className='lb';lb.hidden=true;
   lb.innerHTML='<img alt=""><button type="button" class="x" aria-label="Close">Close</button><button type="button" class="pv" aria-label="Newer">&larr;</button><button type="button" class="nx" aria-label="Older">&rarr;</button>';
   document.body.appendChild(lb);var big=lb.querySelector('img'),cur=0;
-  function show(n){cur=(n+LOGS.length)%LOGS.length;big.src='img/devlogs/'+LOGS[cur].d+'.webp';big.alt='Weekly dev log, '+LOGS[cur].w;lb.hidden=false;}
+  function show(n){cur=(n+LOGS.length)%LOGS.length;big.src='/img/devlogs/'+LOGS[cur].d+'.webp';big.alt='Weekly dev log, '+LOGS[cur].w;lb.hidden=false;}
   document.addEventListener('click',function(e){var b=e.target.closest('[data-i]');if(b&&!lb.contains(b))show(+b.dataset.i);});
   lb.addEventListener('click',function(e){if(e.target.classList.contains('nx'))show(cur+1);else if(e.target.classList.contains('pv'))show(cur-1);else lb.hidden=true;});
   document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1);});
 })();
 </script>
-<script src="site.js"></script>
+<script src="/site.js"></script>
 </body>
 </html>
