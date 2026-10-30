@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dev Logs | JaB Arcade</title>
+<meta name="description" content="Weekly development logs from JaB Arcade, posted every Monday.">
+<link rel="canonical" href="https://jabarcade.com/devlogs.html">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#c0281c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JaB Arcade">
+<meta property="og:title" content="JaB Arcade Dev Logs">
+<meta property="og:description" content="Weekly development logs from JaB Arcade, posted every Monday.">
+<meta property="og:url" content="https://jabarcade.com/devlogs.html">
+<meta property="og:image" content="https://jabarcade.com/img/og-jab.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<style>html{padding-block:env(safe-area-inset-top,0px) env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+</head>
+<body>
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="40" height="40">JaB Arcade</a>
+    <button type="button" class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#games">Our Games</a>
+      <a href="devlogs.html" aria-current="page">Dev Logs</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="section">
+    <div class="sh">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 14h7M9 17h5" stroke="#c0281c" stroke-width="1.6"/></svg></span>
+      <div><h2>Dev Logs</h2></div>
+    </div>
+    <p class="lead-in">Check what we've been up to. Tap one to read it full size.</p>
+    <div id="latest"></div>
+    <h3 class="dl-archive">Archive</h3>
+    <div class="dl-grid" id="grid"></div>
+    <div class="dl-more">
+      <strong>Wanna see further back?</strong>
+      <span>Scroll back in the dev log chat in the JaB Arcade Discord.</span>
+      <a class="btn" href="https://discord.gg/TVny644Y8V" target="_blank" rel="noopener"><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>Open the Discord</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 JaB Arcade. All rights reserved.</div>
+</footer>
+
+<script>
+var LOGS=[{"d": "2026-10-26", "x": "2114809395489968387", "w": "October 19-25"}, {"d": "2026-10-19", "x": "2112257675257942292", "w": "October 12-18"}, {"d": "2026-10-12", "x": "2109720979802910817", "w": "October 5-11"}, {"d": "2026-10-05", "x": "2107184256325759094", "w": "September 28 - October 4"}, {"d": "2026-09-28", "x": "2104647426673893850", "w": "September 21-27"}, {"d": "2026-09-21", "x": "2102110737736831262", "w": "September 14-20"}, {"d": "2026-09-14", "x": "2099574062850744512", "w": "September 7-13"}, {"d": "2026-09-07", "x": "2097037403735113862", "w": "August 31 - September 6"}, {"d": "2026-08-31", "x": "2094500578579583201", "w": "August 24-30"}, {"d": "2026-08-24", "x": "2091948683298226425", "w": "August 17-23"}, {"d": "2026-08-17", "x": "2089427302085992783", "w": "August 10-16"}, {"d": "2026-08-10", "x": "2086890354813374530", "w": "August 3-9"}, {"d": "2026-08-03", "x": "2084353780707905544", "w": "July 27 - August 2"}, {"d": "2026-07-27", "x": "2081816922727895454", "w": "July 20-26"}, {"d": "2026-07-20", "x": "2079280308201943330", "w": "July 13-19"}, {"d": "2026-07-13", "x": "2076743508992397533", "w": "July 6-12"}, {"d": "2026-07-06", "x": "2074206803601076268", "w": "June 29 - July 5"}, {"d": "2026-06-29", "x": "2071670150596588021", "w": "June 22-28"}, {"d": "2026-06-22", "x": "2069133440432136509", "w": "June 15-21"}, {"d": "2026-06-15", "x": "2066596698751746233", "w": "June 8-14"}, {"d": "2026-06-08", "x": "2064059988981497882", "w": "June 1-7"}, {"d": "2026-06-01", "x": "2061523921908670935", "w": "May 25-31"}, {"d": "2026-05-25", "x": "2058986579675254821", "w": "May 18-24"}, {"d": "2026-05-18", "x": "2056450380427411899", "w": "May 11-17"}, {"d": "2026-05-11", "x": "2053913070506811450", "w": "May 4-10"}, {"d": "2026-05-04", "x": "2051376460602954096", "w": "April 27 - May 3"}, {"d": "2026-04-27", "x": "2048839618355744939", "w": "April 20-26"}, {"d": "2026-04-20", "x": "2046302947970015636", "w": "April 13-19"}, {"d": "2026-04-13", "x": "2043766209913459165", "w": "April 6-12"}, {"d": "2026-04-06", "x": "2041225285543121034", "w": "March 30 - April 5"}];
+(function(){
+  function fmt(d){var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0];}
+  function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]});}
+  function card(l,i,big){
+    var t=l.t?'<details class="dl-text"><summary>Read the dev log</summary><div>'+esc(l.t).replace(/\n/g,'<br>')+'</div></details>':'';
+    return '<article class="dl-card'+(big?' dl-big':'')+'"><button type="button" class="dl-thumb" data-i="'+i+'" aria-label="Open the '+l.w+' dev log full size"><img src="img/devlogs/'+l.d+(big?'':'-t')+'.webp" alt="Weekly dev log, '+l.w+'" loading="'+(big?'eager':'lazy')+'" width="640" height="640"></button>'+
+      '<div class="dl-info">'+(big?'<span class="tag">Latest</span>':'')+'<h4>'+l.w+'</h4><span class="dl-posted">Posted '+fmt(l.d)+'</span>'+t+
+      '<div class="dl-links"><button type="button" class="more dl-open" data-i="'+i+'">Full size</button><a class="more" href="https://x.com/JaBArcade/status/'+l.x+'" target="_blank" rel="noopener">View on X &rarr;</a></div></div></article>';
+  }
+  document.getElementById('latest').innerHTML=card(LOGS[0],0,true);
+  var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var out='',last='';
+  LOGS.slice(1).forEach(function(l,k){var p=l.d.split('-'),m=MONTHS[+p[1]-1]+' '+p[0];if(m!==last){out+='<h4 class="dl-month">'+m+'</h4>';last=m;}out+=card(l,k+1,false);});
+  document.getElementById('grid').innerHTML=out;
+  var lb=document.createElement('div');lb.className='lb';lb.hidden=true;
+  lb.innerHTML='<img alt=""><button type="button" class="x" aria-label="Close">Close</button><button type="button" class="pv" aria-label="Newer">&larr;</button><button type="button" class="nx" aria-label="Older">&rarr;</button>';
+  document.body.appendChild(lb);var big=lb.querySelector('img'),cur=0;
+  function show(n){cur=(n+LOGS.length)%LOGS.length;big.src='img/devlogs/'+LOGS[cur].d+'.webp';big.alt='Weekly dev log, '+LOGS[cur].w;lb.hidden=false;}
+  document.addEventListener('click',function(e){var b=e.target.closest('[data-i]');if(b&&!lb.contains(b))show(+b.dataset.i);});
+  lb.addEventListener('click',function(e){if(e.target.classList.contains('nx'))show(cur+1);else if(e.target.classList.contains('pv'))show(cur-1);else lb.hidden=true;});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1);});
+})();
+</script>
+<script src="site.js"></script>
+</body>
+</html>
